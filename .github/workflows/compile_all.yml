@@ -338,7 +338,7 @@ jobs:
               }]
             }' "$DISCORD_WEBHOOK_URL")
             if [ "$status" -eq 204 ]; then
-              echo "Discord notification (PRERELEASE) sent on attempt $attempt"
+              echo "Discord notification (PRERELEASE) sept $attempt"
               break
             fi
             echo "Failed to send Discord notification (PRERELEASE) on attempt $attempt (HTTP $status): $(cat response.json)"
